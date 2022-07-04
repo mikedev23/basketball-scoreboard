@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Basketball Scoreboard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="sub-wrapper">
+                <h3 class="board-title">HOME</h3>
+                <div class="pts-wrapper">
+                    <p class="score" id="homeNumEl">0</p>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn" onclick="plusOneHome()">+1</button>
+                    <button class="btn" onclick="plusTwoHome()">+2</button>
+                    <button class="btn" onclick="plusThreeHome()">+3</button>
+                </div>
+            </div>
+            <div class="sub-wrapper">
+                <h3 class="board-title">GUEST</h3>
+                <div class="pts-wrapper">
+                    <p class="score" id="guestNumEl">0</p>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn" onclick="plusOneGuest()">+1</button>
+                    <button class="btn" onclick="plusTwoGuest()">+2</button>
+                    <button class="btn" onclick="plusThreeGuest()">+3</button>
+                </div>
+            </div>
+            <button id="reset-btn" onclick="resetBtn()">Reset</button>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
